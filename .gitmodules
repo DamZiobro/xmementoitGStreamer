@@ -13,3 +13,6 @@
 [submodule "gst-plugins-ugly"]
 	path = gst-plugins-ugly
 	url = git://anongit.freedesktop.org/gstreamer/gst-plugins-ugly
+[submodule "gst-ffmpeg"]
+	path = gst-ffmpeg
+	url = git://anongit.freedesktop.org/gstreamer/gst-ffmpeg
