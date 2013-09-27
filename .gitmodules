@@ -4,3 +4,12 @@
 [submodule "gst-plugins-base"]
 	path = gst-plugins-base
 	url = git://anongit.freedesktop.org/gstreamer/gst-plugins-base
+[submodule "gst-plugins-good"]
+	path = gst-plugins-good
+	url = git://anongit.freedesktop.org/gstreamer/gst-plugins-good
+[submodule "gst-plugins-bad"]
+	path = gst-plugins-bad
+	url = git://anongit.freedesktop.org/gstreamer/gst-plugins-bad
+[submodule "gst-plugins-ugly"]
+	path = gst-plugins-ugly
+	url = git://anongit.freedesktop.org/gstreamer/gst-plugins-ugly
