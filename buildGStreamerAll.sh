@@ -31,26 +31,30 @@ function installComponent {
 }
 
 #==============================================================
-# BUILDING GStreamer components
+# BUILDING  AND INSTALLING GStreamer components
 #==============================================================
 
 # GSTREAMER CORE
 buildComponent gstreamer || exit -1
-buildComponent gst-plugins-base || exit -1
-buildComponent gst-plugins-bad || exit -1
-buildComponent gst-plugins-good || exit -1
-buildComponent gst-plugins-ugly || exit -1
-buildComponent gst-rtsp-server || exit -1
-
-#==============================================================
-# INSTALLING GStreamer components
-#==============================================================
-
-#GSTREAMER CORE
 installComponent gstreamer || exit -1
+
+# GSTREAMER PLUGINS BASE
+buildComponent gst-plugins-base || exit -1
 installComponent gst-plugins-base || exit -1
+
+# GSTREAMER PLUGINS BAD
+buildComponent gst-plugins-bad || exit -1
 installComponent gst-plugins-bad || exit -1
+
+# GSTREAMER PLUGINS GOOD
+buildComponent gst-plugins-good || exit -1
 installComponent gst-plugins-good || exit -1
+
+# GSTREAMER PLUGINS UNGLY
+buildComponent gst-plugins-ugly || exit -1
 installComponent gst-plugins-ugly || exit -1
+
+# GSTREAMER RTSP SERVER
+buildComponent gst-rtsp-server || exit -1
 installComponent gst-rtsp-server || exit -1
 
