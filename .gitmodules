@@ -16,3 +16,6 @@
 [submodule "gst-ffmpeg"]
 	path = gst-ffmpeg
 	url = git://anongit.freedesktop.org/gstreamer/gst-ffmpeg
+[submodule "gst-rtsp-server"]
+	path = gst-rtsp-server
+	url = git://anongit.freedesktop.org/gstreamer/gst-rtsp-server

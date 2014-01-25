@@ -40,6 +40,7 @@ buildComponent gst-plugins-base || exit -1
 buildComponent gst-plugins-bad || exit -1
 buildComponent gst-plugins-good || exit -1
 buildComponent gst-plugins-ugly || exit -1
+buildComponent gst-rtsp-server || exit -1
 
 #==============================================================
 # INSTALLING GStreamer components
@@ -51,4 +52,5 @@ installComponent gst-plugins-base || exit -1
 installComponent gst-plugins-bad || exit -1
 installComponent gst-plugins-good || exit -1
 installComponent gst-plugins-ugly || exit -1
+installComponent gst-rtsp-server || exit -1
 
