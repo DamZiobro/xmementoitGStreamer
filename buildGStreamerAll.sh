@@ -22,7 +22,7 @@ function buildComponent {
 echo -e "\n\n ${green}===> Building $1... ${textreset}\n\n"
     cd $GSTREAMER_BUILD_DIR/$1 || exit -1 
     ./autogen.sh || exit -1 
-    ./configure || exit -1
+    #./configure || exit -1
     make -j`nproc` || exit -1
     echo -e "\n\n ${green}===> $1 built successfully ${textreset}\n\n"
 }
