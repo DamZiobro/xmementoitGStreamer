@@ -19,3 +19,6 @@
 [submodule "gst-rtsp-server"]
 	path = gst-rtsp-server
 	url = git://anongit.freedesktop.org/gstreamer/gst-rtsp-server
+[submodule "gst-libav"]
+	path = gst-libav
+	url = git://anongit.freedesktop.org/gstreamer/gst-libav

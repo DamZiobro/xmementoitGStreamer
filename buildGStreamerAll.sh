@@ -62,3 +62,6 @@ installComponent gst-plugins-ugly || exit -1
 buildComponent gst-rtsp-server || exit -1
 installComponent gst-rtsp-server || exit -1
 
+# GSTREAMER LIBAV
+buildComponent gst-libav || exit -1
+installComponent gst-libav || exit -1
