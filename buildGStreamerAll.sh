@@ -3,6 +3,10 @@
 # Copyright 2013 XMementoIT Limited (info@xmementoit.com)
 # Author: Damian Ziobro (ziobro.damian@gmail.com)
 
+#init git submodules
+git submodule init 
+git submodule update
+
 #variable for color effects
 textreset=$(tput sgr0) # reset the foreground colour
 red=$(tput setaf 1)
@@ -19,7 +23,7 @@ echo -e "\n\n ${green}===> Building $1... ${textreset}\n\n"
     cd $GSTREAMER_BUILD_DIR/$1 || exit -1 
     ./autogen.sh || exit -1 
     ./configure || exit -1
-    make -j10 || exit -1
+    make -j`nproc` || exit -1
     echo -e "\n\n ${green}===> $1 built successfully ${textreset}\n\n"
 }
 
